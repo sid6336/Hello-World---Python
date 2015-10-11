@@ -59,7 +59,7 @@ Happy_Bday = Song (["Hello My friend",
                     "I wish you all the best."])
 Happy_Bday.sing_me_a_song()
 
-#Class, Object, is-a, has-a
+#5. Class, Object, is-a, has-a
 
 class Animal(object):
   pass
@@ -82,3 +82,19 @@ john = Person("John")
 john.pet=owen
 
 print john.pet.name
+
+#6. Class inheritence, override, super class
+
+class Parent(object):
+  def implicit(self):
+    print "Parent implicit"
+
+class Child(Parent):
+  def implicit(self):
+    print "Child override before"
+    super(Child,self).implicit()
+    print "Child override after"
+
+father = Parent()
+son = Child()
+son.implicit()
