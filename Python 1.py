@@ -33,3 +33,15 @@ elements = []
 for i in range (0,6):
   elements.append(i) # adding i into list
 print elements
+
+# 3. Adding to list
+input1 = "Sugar Beer Meat"
+pool = ['Salad','Steak','Icer-cream','Eggs']
+stuff = input1.split()
+while len(stuff) < 5:
+  next_thing = pool.pop(0)
+  stuff.append(next_thing)
+  print "%s has been added, there are %d items in the list." % (next_thing, len(stuff))
+
+print ' '.join(stuff)
+print '#'.join(stuff[2:5])
