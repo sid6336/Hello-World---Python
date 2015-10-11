@@ -58,3 +58,27 @@ Happy_Bday = Song (["Hello My friend",
                     "This is your B'day",
                     "I wish you all the best."])
 Happy_Bday.sing_me_a_song()
+
+#Class, Object, is-a, has-a
+
+class Animal(object):
+  pass
+
+class Dog(Animal):
+  def __init(self,name):
+    self.name=name
+class Cat(Animal):
+  def __init(self,name):
+    self.name=name
+
+class Person(object):
+  def __init(self,name):
+    self.name=name
+    self.pet=none
+
+rex = Dog("Rex")
+owen = Cat("Owen")
+john = Person("John")
+john.pet=owen
+
+print john.pet.name
