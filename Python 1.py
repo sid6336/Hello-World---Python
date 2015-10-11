@@ -45,3 +45,16 @@ while len(stuff) < 5:
 
 print ' '.join(stuff)
 print '$'.join(stuff[2:5]) #$ signs betwee 2-4
+
+# 4. Class
+class Song(object):
+  def __init__ (self,lyrics):
+    self.lyrics=lyrics
+  def sing_me_a_song (self):
+    for line in self.lyrics:
+      print line 
+
+Happy_Bday = Song (["Hello My friend",
+                    "This is your B'day",
+                    "I wish you all the best."])
+Happy_Bday.sing_me_a_song()
