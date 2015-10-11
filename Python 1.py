@@ -1,4 +1,4 @@
-# Copying text from one file to another
+# 1. Copying text from one file to another
 # $python script.py from_file.txt to_file.txt
 
 from sys import argv
@@ -22,3 +22,14 @@ print "All done."
 
 in_file.close()
 out_file.close()
+
+# 2. lists
+mix_list = [1,'hello',2,'sid', True]
+
+for item in mix_list:
+  print "This is your item from Mix_List %r" % item  #%r for mixed lists, %d number, %s string
+
+elements = []
+for i in range (0,6):
+  elements.append(i) # adding i into list
+print elements
