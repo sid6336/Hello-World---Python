@@ -114,10 +114,18 @@ dict1={}
 dict1['Name'] = 'John'
 dict1['Age'] = 18
 
-print dict1.keys(), dict1.values(), dict1.items()
+print dict1.keys(), dict1.values(), dict1.items() #items=(key,value)
 
-search_value='John'
+search_value='John' #search value='John' and print its key
 if search_value in dict1.values():
   for first,second in dict1.items():
     if second==search_value:
       print first,second
+
+for key in sorted(dict1): #sorted keys and their values
+  print key,dict1[key]
+  
+print "%(Name)s came yesterday. He is %(Age)d years old." % dict1
+
+
+  
