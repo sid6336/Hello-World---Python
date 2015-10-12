@@ -127,5 +127,20 @@ for key in sorted(dict1): #sorted keys and their values
   
 print "%(Name)s came yesterday. He is %(Age)d years old." % dict1
 
+#9. Word Counter
+data ="Hello world, hello friends the world is nice."
+
+def word_counter(data):
+	word_count={}
+	words = data.split()
+	for word in words:
+    	word = word.lower() #low cases
+    	if word[-1]==',': word=word[:-1] #elimate commans after words    
+    	if word not in word_count:
+        	word_count[word]=1
+    	else:
+        	word_count[word]+=1
+    return word_count
+
 
   
