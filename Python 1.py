@@ -98,3 +98,26 @@ class Child(Parent):
 father = Parent()
 son = Child()
 son.implicit()
+
+#7. List
+import random
+list_new = random.shuffle(list_old)
+
+sorted (list1, key=lambda s:s[-1]) #sorted by last character of each element in list
+sorted (list1, key=len)
+sorted (list1, key=str.lower, reverse = True)
+
+list_low = [x.lower() for x in list_orig] #comprehension
+
+#8. Dict
+dict1={}
+dict1['Name'] = 'John'
+dict1['Age'] = 18
+
+print dict1.keys(), dict1.values(), dict1.items()
+
+search_value='John'
+if search_value in dict1.values():
+  for first,second in dict1.items():
+    if second==search_value:
+      print first,second
