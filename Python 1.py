@@ -140,7 +140,16 @@ def word_counter(data):
         	word_count[word]=1
     	else:
         	word_count[word]+=1
-    return word_count
+    return word_count #return dictionary
 
+def get_dict(data): #return word qty
+	dic_1 = word_counter(data) #run word_counter function
+	words = sorted(dict_1.keys())
+	for item in words:
+		print item, words[item]
 
-  
+def top_5(data):
+	dic_1 = word_counter(data)
+	dic_sorted = sorted (dic_1, key= lambda x: x[-1], reverse = True) #tuple [(word, qty)]
+	for item in dic_sorted[0:5]:
+		print item[0], item[1]
